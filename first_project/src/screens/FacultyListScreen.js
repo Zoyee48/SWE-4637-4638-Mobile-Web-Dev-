@@ -10,7 +10,7 @@ const FacultyListScreen = () => {
       { name: "5> Tajkia Rahman Toma"},
     ];
     return (
-        <View style={styles.viewStyle}>
+        <View style={styles.container}>
           <Text style={styles.textStyle2}>The list of Faculties: </Text>
           <FlatList
             style={styles.ListStyle}
@@ -25,6 +25,9 @@ const FacultyListScreen = () => {
     };
 
 const styles = StyleSheet.create({
+  container: {
+    paddingTop: 30,
+  },
     textStyle: {
         fontSize: 25,
         color: "#0000FF",

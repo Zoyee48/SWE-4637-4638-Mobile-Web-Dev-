@@ -4,11 +4,11 @@ import { Text, StyleSheet, View, Button, TouchableOpacity, Image} from "react-na
 const HomeScreen = (props) => {
   //console.log(props);
   return (
-    <View>
+    <View style = {styles.container}>
 
-      <Image source = {require("./../../assets/icon.png")}>
-        
-      </Image>
+      <Image
+        style = {styles.imageStyle}
+        source = {require("./../../assets/logo.png")}/>        
       <Text style={styles.textStyle}>Department Of CSE</Text>
       <Text style={styles.textStyle}>Programme: SWE</Text>
       <Text style={styles.textStyle}></Text>
@@ -16,7 +16,8 @@ const HomeScreen = (props) => {
       <Button
         title="My Profile"
         onPress={function () {
-          console.log("Button Pressed 2");
+          props.navigation.navigate("My Profile");
+          //console.log("Button Pressed");
         }}
       />
       </TouchableOpacity>
@@ -36,7 +37,7 @@ const HomeScreen = (props) => {
         title="List of Faculty Members"
         onPress={function () {
           props.navigation.navigate("Faculty List");
-          console.log("Button Pressed");
+          //console.log("Button Pressed");
         }}
       />
     </View>
@@ -44,10 +45,19 @@ const HomeScreen = (props) => {
 };
 
 const styles = StyleSheet.create({
+  container: {
+    paddingTop: 50,
+  },
   textStyle: {
     fontSize: 30,
     color: "blue",
     textAlign: "center",
+  },
+  imageStyle: {
+    width: 130,
+    height: 215,
+    alignSelf: "center",
+    
   },
 });
 
