@@ -18,8 +18,8 @@ const SemesterScreen = (props) => {
         <Button
           title="2nd Semester"
           onPress={function () {
-            //props.navigation.navigate("Semesters");
-            console.log("Button Pressed2");
+            props.navigation.navigate("Second Semester");
+            
           }}
         />
 
