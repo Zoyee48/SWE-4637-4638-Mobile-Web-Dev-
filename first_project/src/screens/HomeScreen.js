@@ -27,7 +27,8 @@ const HomeScreen = (props) => {
       <Button
         title="Semester Wise Course List"
         onPress={function () {
-          console.log("Button Pressed");
+          props.navigation.navigate("Semesters");
+          //console.log("Button Pressed");
         }}
       />
 
