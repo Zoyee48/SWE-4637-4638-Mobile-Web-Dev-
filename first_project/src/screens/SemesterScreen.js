@@ -8,8 +8,8 @@ const SemesterScreen = (props) => {
         <Button
           title="1st Semester"
           onPress={function () {
-            //props.navigation.navigate("Semesters");
-            console.log("Button Pressed");
+            props.navigation.navigate("First Semester");
+            //console.log("Button Pressed");
           }}
         />
   
