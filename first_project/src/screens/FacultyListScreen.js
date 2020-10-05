@@ -12,6 +12,7 @@ const FacultyListScreen = () => {
     return (
         <View style={styles.container}>
           <Text style={styles.textStyle2}>The list of Faculties: </Text>
+          <Text> </Text>
           <FlatList
             style={styles.ListStyle}
             data={faculty_list}
@@ -29,9 +30,9 @@ const styles = StyleSheet.create({
     paddingTop: 30,
   },
     textStyle: {
-        fontSize: 25,
+        fontSize: 20,
         color: "#0000FF",
-        marginVertical: 30,
+        marginVertical: 10,
         },
     viewStyle: {
         borderColor: "#CCE5FF",

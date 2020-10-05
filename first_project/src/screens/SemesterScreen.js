@@ -5,6 +5,8 @@ const SemesterScreen = (props) => {
     //console.log(props);
     return (
       <View style = {styles.container}>
+        <Text style={styles.textStyle2}>List of Semesters: </Text>
+        <Text> </Text>
         <Button
           title="1st Semester"
           onPress={function () {
@@ -28,23 +30,32 @@ const SemesterScreen = (props) => {
         <Button
           title="3rd Semester"
           onPress={function () {
-            //props.navigation.navigate("Semesters");
-            console.log("Button Pressed3");
+            props.navigation.navigate("Third Semester");
+            
           }}
         />
+
+
       </View>
     );
   };
   
   const styles = StyleSheet.create({
     container: {
-      paddingTop: 50,
+      paddingTop: 30,
     },
     textStyle: {
       fontSize: 30,
       color: "blue",
       textAlign: "center",
     },
+    textStyle2: {
+      fontSize: 35,
+      fontStyle: "italic",
+      fontWeight: "bold",
+      color: "#000080",
+      textAlign: "center",
+      },
   });
 
   export default SemesterScreen;

@@ -1,14 +1,14 @@
 import React from "react";
 import {Text, View, StyleSheet, FlatList} from "react-native";
 
-const FirstSemesterScreen = () => {
+const ThirdSemesterScreen = () => {
     const course_list = [
-      { name: "1: Islamiat"},
-      { name: "2: Technology, Environment and Society"},
-      { name: "3: Geometry and Differential Calculus"},
-      { name: "4: Physics II"},
-      { name: "5: Structured Programming I"},
-      { name: "6: Physics II Lab"},
+      { name: "1: Linear Algebra"},
+      { name: "2: Data Structures"},
+      { name: "3: Computer Organization and Architecture"},
+      { name: "4: Database Management System "},
+      { name: "5: Theory of Computing "},
+      { name: "6: Data Structures Lab "},
     ];
     return (
         <View style={styles.container}>
@@ -45,4 +45,4 @@ const FirstSemesterScreen = () => {
         },
     });
 
-export default FirstSemesterScreen;
+export default ThirdSemesterScreen;

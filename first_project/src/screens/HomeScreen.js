@@ -9,11 +9,11 @@ const HomeScreen = (props) => {
       <Image
         style = {styles.imageStyle}
         source = {require("./../../assets/logo.png")}/>        
-      <Text style={styles.textStyle}>Department Of CSE</Text>
-      <Text style={styles.textStyle}>Programme: SWE</Text>
+      <Text style={styles.textStyle2}>Department Of CSE</Text>
+      <Text style={styles.textStyle2}>Programme: SWE</Text>
       <Text style={styles.textStyle}></Text>
       <TouchableOpacity>
-      <Button
+      <Button 
         title="My Profile"
         onPress={function () {
           props.navigation.navigate("My Profile");
@@ -54,12 +54,18 @@ const styles = StyleSheet.create({
     color: "blue",
     textAlign: "center",
   },
+  textStyle2: {
+    fontSize: 35,
+    fontStyle: "italic",
+    fontWeight: "bold",
+    color: "#000080",
+    textAlign: "center",
+    },
   imageStyle: {
     width: 130,
     height: 215,
-    alignSelf: "center",
-    
-  },
+    alignSelf: "center",    
+  }
 });
 
 export default HomeScreen;

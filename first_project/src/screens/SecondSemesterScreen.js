@@ -36,7 +36,7 @@ const SecondSemesterScreen = () => {
         textAlign: "left",
       },
       textStyle2: {
-        fontSize: 35,
+        fontSize: 40,
         fontStyle: "italic",
         fontWeight: "bold",
         textDecorationLine: "underline",
