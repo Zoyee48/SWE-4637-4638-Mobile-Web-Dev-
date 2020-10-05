@@ -16,8 +16,7 @@ const HomeScreen = (props) => {
       <Button
         title="My Profile"
         onPress={function () {
-          props.navigation.navigate("List");
-          console.log("Button Pressed");
+          console.log("Button Pressed 2");
         }}
       />
       </TouchableOpacity>
@@ -36,7 +35,8 @@ const HomeScreen = (props) => {
       <Button
         title="List of Faculty Members"
         onPress={function () {
-          console.log("Button Pressed 2");
+          props.navigation.navigate("Faculty List");
+          console.log("Button Pressed");
         }}
       />
     </View>
