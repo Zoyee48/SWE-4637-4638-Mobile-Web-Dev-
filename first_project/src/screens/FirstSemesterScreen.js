@@ -45,9 +45,8 @@ const FirstSemesterScreen = () => {
         },
       textStyle3: {
         fontSize: 25,
-        color: "#FFFFFF",
+        color: "#CC00CC",
         fontWeight: "bold",
-        backgroundColor: "#CC00CC",
       }
     });
 
