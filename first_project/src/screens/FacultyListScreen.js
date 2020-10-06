@@ -3,11 +3,11 @@ import { Text, View, StyleSheet, FlatList, Image } from "react-native";
 
 const FacultyListScreen = () => {
     const faculty_list = [
-      { name: "Professor Dr Muhammad Mahbub Alam", key: '1'},
-      { name: "Dr Md. Abdul Hakim Khan", key: '2'},
-      { name: "Mr Mohayeminul Islam", key: '3'},
-      { name: "Faisal Hussain", key: '4'},
-      { name: "Tajkia Rahman Toma", key: '5'},
+      { name: " Professor Dr Muhammad Mahbub Alam", key: '1'},
+      { name: " Dr Md. Abdul Hakim Khan", key: '2'},
+      { name: " Mr Mohayeminul Islam", key: '3'},
+      { name: " Faisal Hussain", key: '4'},
+      { name: " Tajkia Rahman Toma", key: '5'},
     ];
     return (
         <View style={styles.container}>
