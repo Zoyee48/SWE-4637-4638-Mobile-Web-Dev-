@@ -1,16 +1,19 @@
 import React from "react";
-import { Text, View, StyleSheet, FlatList } from "react-native";
+import { Text, View, StyleSheet, FlatList, Image } from "react-native";
 
 const FacultyListScreen = () => {
     const faculty_list = [
-      { name: "1> Professor Dr Muhammad Mahbub Alam"},
-      { name: "2> Dr Md. Abdul Hakim Khan"},
-      { name: "3> Mr Mohayeminul Islam"},
-      { name: "4> Faisal Hussain"},
-      { name: "5> Tajkia Rahman Toma"},
+      { name: "Professor Dr Muhammad Mahbub Alam", key: '1'},
+      { name: "Dr Md. Abdul Hakim Khan", key: '2'},
+      { name: "Mr Mohayeminul Islam", key: '3'},
+      { name: "Faisal Hussain", key: '4'},
+      { name: "Tajkia Rahman Toma", key: '5'},
     ];
     return (
         <View style={styles.container}>
+          <Image
+          style = {styles.imageStyle}
+          source = {require("./../../assets/faculty3.png")}/>  
           <Text style={styles.textStyle2}>The list of Faculties: </Text>
           <Text> </Text>
           <FlatList
@@ -18,7 +21,7 @@ const FacultyListScreen = () => {
             data={faculty_list}
             renderItem={function ({ item }) {
               //there is an error "Text strings must be rendered within a <Text> component"
-              return <Text style={styles.textStyle}>{item.name}</Text>;
+              return <Text style={styles.textStyle}><Text style={styles.textStyle3}>{item.key}.</Text>{item.name}</Text>;
             }}
           />
         </View>
@@ -27,16 +30,12 @@ const FacultyListScreen = () => {
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 30,
+    paddingTop: 20,
   },
     textStyle: {
         fontSize: 20,
-        color: "#0000FF",
+        color: "#4C0099",
         marginVertical: 10,
-        },
-    viewStyle: {
-        borderColor: "#CCE5FF",
-        borderWidth: 5,
         },
     textStyle2: {
         fontSize: 35,
@@ -46,7 +45,22 @@ const styles = StyleSheet.create({
         color: "#000080",
         textAlign: "center",
         },
-        ListStyle: {},
+    ListStyle: {
+
+    },
+    imageStyle: {
+      width: 130,
+      height: 215,
+      alignSelf: "center",    
+    },
+    textStyle3: {
+      fontSize: 25,
+      color: "#FFFFFF",
+      fontWeight: "bold",
+      backgroundColor: "#CC00CC",
+
+      },
+
     });
       
 export default FacultyListScreen;

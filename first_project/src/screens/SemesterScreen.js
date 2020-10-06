@@ -5,7 +5,11 @@ const SemesterScreen = (props) => {
     //console.log(props);
     return (
       <View style = {styles.container}>
-        <Text style={styles.textStyle2}>List of Semesters: </Text>
+        <Image
+        style = {styles.imageStyle}
+        source = {require("./../../assets/semester.png")}/>  
+        <Text>  </Text>
+        <Text style={styles.textStyle2}>List of Semesters:</Text>
         <Text> </Text>
         <Button
           title="1st Semester"
@@ -42,7 +46,10 @@ const SemesterScreen = (props) => {
   
   const styles = StyleSheet.create({
     container: {
-      paddingTop: 30,
+      paddingTop: 20,
+      marginLeft: 50,
+      marginRight: 50,
+      alignContent: "center",
     },
     textStyle: {
       fontSize: 30,
@@ -53,8 +60,14 @@ const SemesterScreen = (props) => {
       fontSize: 35,
       fontStyle: "italic",
       fontWeight: "bold",
+      textDecorationLine: "underline",
       color: "#000080",
       textAlign: "center",
+      },
+      imageStyle: {
+        width: 170,
+        height: 230,
+        alignSelf: "center",    
       },
   });
 

@@ -9,7 +9,8 @@ const ProfileScreen = () => {
       <Image
         style = {styles.imageStyle}
         source = {require("./../../assets/profile.jpeg")}/>
-        <Text> </Text>
+        <Text>   </Text>
+        <Text>   </Text>
         <Text style={styles.textStyle}>Name: Maliha Mehzabin Zoyee</Text>
         <Text style={styles.textStyle}>Student ID: 170042048</Text>
         <Text style={styles.textStyle}>Room: 404, UTB(FHR)</Text>
@@ -24,8 +25,9 @@ const styles = StyleSheet.create({
   },
     textStyle: {
       fontSize: 25,
-      color: "blue",
+      color: "#4C0099",
       textAlign: "left",
+      backgroundColor: "#E5CCFF",
     },
     textStyle2: {
       fontSize: 35,

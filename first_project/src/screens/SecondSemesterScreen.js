@@ -3,12 +3,12 @@ import {Text, View, StyleSheet, FlatList} from "react-native";
 
 const SecondSemesterScreen = () => {
     const course_list = [
-      { name: "1: Accounting "},
-      { name: "2: Business Psychology and Communications "},
-      { name: "3: Discrete Mathematics "},
-      { name: "4: Object Oriented Concepts I"},
-      { name: "5: Digital Logic Design"},
-      { name: "6: Digital Logic Design Lab"},
+      { name: " Accounting ", key: 'Hum 4247'},
+      { name: " Business Psychology and Communications ", key: 'Hum 4249'},
+      { name: " Discrete Mathematics ", key: 'CSE 4203'},
+      { name: " Object Oriented Concepts I", key: 'SWE 4201'},
+      { name: " Digital Logic Design", key: 'CSE 4205'},
+      { name: " Digital Logic Design Lab", key: 'CSE 4206'},
     ];
     return (
         <View style={styles.container}>
@@ -19,7 +19,7 @@ const SecondSemesterScreen = () => {
             data={course_list}
             renderItem={function ({ item }) {
               //there is an error "Text strings must be rendered within a <Text> component"
-              return <Text style={styles.textStyle}>{item.name}</Text>;
+              return <Text style={styles.textStyle}><Text style={styles.textStyle3}>{item.key}.</Text>{item.name}</Text>;
             }}
           />
         </View>
@@ -32,7 +32,7 @@ const SecondSemesterScreen = () => {
       },
       textStyle: {
         fontSize: 25,
-        color: "blue",
+        color: "#4C0099",
         textAlign: "left",
       },
       textStyle2: {
@@ -43,6 +43,12 @@ const SecondSemesterScreen = () => {
         color: "#000080",
         textAlign: "center",
         },
+        textStyle3: {
+          fontSize: 25,
+          color: "#FFFFFF",
+          fontWeight: "bold",
+          backgroundColor: "#CC00CC",
+        }
     });
 
 export default SecondSemesterScreen;
